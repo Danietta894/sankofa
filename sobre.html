@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Sankofa Científico</title>
+    <style>
+        :root {
+            --primary-color: #4A235A;
+            --secondary-color: #6C3483;
+            --accent-color: #E74C3C;
+            --background-color: #F4F6F7;
+            --text-color: #2C3E50;
+            --button-bg: #E74C3C;
+            --button-hover: #C0392B;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid var(--primary-color);
+        }
+        .container h1 {
+            color: var(--primary-color);
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .text-box {
+            border: 5px solid var(--secondary-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #f9e6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: var(--button-bg);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: var(--button-hover);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sobre o Sankofa Científico</h1>
+        <div class="text-box">
+            O Sankofa Científico é um projeto dedicado a destacar as contribuições de cientistas e inventores negros ao longo da história. 
+            Muitas dessas figuras revolucionaram diversas áreas do conhecimento, mas frequentemente não recebem o devido reconhecimento. 
+            Nosso objetivo é promover visibilidade e valorização desses profissionais, incentivando a educação e o interesse científico.
+        </div>
+        <div class="text-box">
+            Inspirado no conceito africano de Sankofa, que significa "retornar e buscar o que foi esquecido", este site busca resgatar e 
+            compartilhar histórias inspiradoras de cientistas e inventores negros, demonstrando sua importância para a ciência e a sociedade.
+        </div>
+        <a href="index.html" class="button">Voltar</a>
+    </div>
+</body>
+</html>
