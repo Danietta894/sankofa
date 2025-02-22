@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cientistas por Área - Sankofa Científico</title>
+    <style>
+        :root {
+            --primary-color: #4A235A;
+            --secondary-color: #6C3483;
+            --accent-color: #E74C3C;
+            --background-color: #F4F6F7;
+            --text-color: #2C3E50;
+            --button-bg: #E74C3C;
+            --button-hover: #C0392B;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid var(--primary-color);
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .area {
+            margin-top: 30px;
+            padding: 15px;
+            border: 4px solid var(--primary-color);
+            border-radius: 12px;
+            background: #f9e6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: white;
+            background: var(--primary-color);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            text-align: center;
+        }
+        .cientista-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .cientista {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            min-height: 420px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .cientista:hover {
+            transform: scale(1.05);
+        }
+        .cientista img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .cientista p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+        .cientista a {
+            display: inline-block;
+            background-color: var(--button-bg);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .cientista a:hover {
+            background-color: var(--button-hover);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cientistas por Área</h1>
+        <p>Conheça cientistas e inventores negros que contribuíram para diferentes áreas do conhecimento.</p>
+
+        <!-- Ciências Exatas -->
+        <div class="area">
+            <h2>Ciências Exatas</h2>
+            <div class="cientista-container">
+                <div class="cientista">
+                    <img src="otis.jpg" alt="Otis Bobby Boykin">
+                    <h3>Otis Bobby Boykin – Engenheiro Eletrônico</h3>
+                    <p>Desenvolveu um resistor elétrico mais eficiente, amplamente utilizado em rádios, televisões e computadores.</p>
+                    <a href="otis.html">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Medicina e Saúde -->
+        <div class="area">
+            <h2>Medicina e Saúde</h2>
+            <div class="cientista-container">
+                <div class="cientista">
+                    <img src="maria-odilia.jpg" alt="Maria Odília Teixeira">
+                    <h3>Maria Odília Teixeira – Primeira Médica Negra do Brasil</h3>
+                    <p>Primeira mulher negra formada em medicina no Brasil, defensora da saúde pública e educação.</p>
+                    <a href="maria-odilia.html">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Engenharia e Tecnologia -->
+        <div class="area">
+            <h2>Engenharia e Tecnologia</h2>
+            <div class="cientista-container">
+                <div class="cientista">
+                    <img src="granville-woods.jpg" alt="Granville Woods">
+                    <h3>Granville Woods – Inventor e Engenheiro</h3>
+                    <p>Conhecido como "O Edison Negro", desenvolveu melhorias no sistema ferroviário e elétrico.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ciências Sociais e Humanas -->
+        <div class="area">
+            <h2>Ciências Sociais e Humanas</h2>
+            <div class="cientista-container">
+                <div class="cientista">
+                    <img src="web-du-bois.jpg" alt="W.E.B. Du Bois">
+                    <h3>W.E.B. Du Bois – Sociólogo e Historiador</h3>
+                    <p>Um dos pioneiros na sociologia racial e ativista pelos direitos civis.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>
