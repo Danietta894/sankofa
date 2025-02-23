@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linha do Tempo - Cientistas Negros</title>
+  <style>
+    :root {
+      --primary-color: #4A235A;   /* Roxo escuro - sabedoria e criatividade */
+      --secondary-color: #6C3483; /* Roxo médio - equilíbrio */
+      --accent-color: #E74C3C;    /* Vermelho - energia e dinamismo */
+      --background-color: #F4F6F7;/* Cinza claro - neutro e limpo */
+      --text-color: #2C3E50;      /* Azul escuro - confiança e segurança */
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4A235A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: var(--background-color);
+      margin: 0;
+      padding: 20px;
+      color: var(--text-color);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary-color);
+    }
+    /* Container principal da linha do tempo */
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+      z-index: 0;
+    }
+    /* Linha vertical central */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: linear-gradient(var(--secondary-color), var(--primary-color));
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: -1;
+    }
+    /* Itens da linha do tempo */
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 10px 40px;
+      margin-bottom: 30px;
+      background-color: inherit;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.8s ease, opacity 0.8s ease;
+      z-index: 1;
+    }
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .timeline-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    /* Marcador (bolinha) de cada evento */
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: var(--background-color);
+      border: 4px solid var(--primary-color);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 2;
+      transition: background 0.3s ease;
+    }
+    .timeline-item:hover::after {
+      background: var(--accent-color);
+    }
+    /* Itens à esquerda */
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item.left::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      border: 10px solid transparent;
+      border-left-color: #fff;
+    }
+    .timeline-item.left::after {
+      right: -17px;
+    }
+    /* Itens à direita */
+    .timeline-item.right {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-item.right::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 30px;
+      border: 10px solid transparent;
+      border-right-color: #fff;
+    }
+    .timeline-item.right::after {
+      left: -17px;
+    }
+    /* Conteúdo do card */
+    .timeline-item .content {
+      padding: 20px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-top: 3px solid var(--primary-color);
+    }
+    .timeline-item .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+    /* Estilo para as imagens (ilustrações/fotos) */
+    .timeline-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    /* Responsividade para telas menores */
+    @media screen and (max-width: 600px) {
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left;
+      }
+      .timeline-item.left, .timeline-item.right {
+        left: 0;
+      }
+      .timeline-item.left::before, .timeline-item.right::before {
+        left: 60px;
+        border: 10px solid transparent;
+        border-right-color: #fff;
+      }
+      .timeline::after {
+        left: 31px;
+      }
+      .timeline-item::after {
+        left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Linha do Tempo - Cientistas Negros</h1>
+  <div class="timeline">
+    <!-- 1. Benjamin Banneker -->
+    <div class="timeline-item left">
+      <div class="content">
+        <img class="timeline-image" src="benn.jpg" alt="Retrato de Benjamin Banneker">
+        <div class="date">1757</div>
+        <h3>Benjamin Banneker</h3>
+        <p>Matemático, astrônomo e autor, Banneker é reconhecido como um dos primeiros cientistas negros dos EUA, contribuindo para a astronomia e cálculos matemáticos.</p>
+      </div>
+    </div>
+    <!-- 2. George Washington Carver -->
+    <div class="timeline-item right">
+      <div class="content">
+        <img class="timeline-image" src="wash.jpg" alt="Retrato de George Washington Carver">
+        <div class="date">1864</div>
+        <h3>George Washington Carver</h3>
+        <p>Pioneiro na agricultura sustentável, Carver revolucionou o uso de culturas como o amendoim e a batata-doce, promovendo técnicas para melhorar a fertilidade do solo.</p>
+      </div>
+    </div>
+    <!-- 3. Marie Van Brittan Brown -->
+    <div class="timeline-item left">
+      <div class="content">
+        <img class="timeline-image" src="mariaaa.jpg" alt="Ilustração de Marie Van Brittan Brown">
+        <div class="date">1966</div>
+        <h3>Marie Van Brittan Brown</h3>
+        <p>Inventora do primeiro sistema de segurança residencial com câmera, ela abriu caminho para as tecnologias modernas de vigilância e segurança.</p>
+      </div>
+    </div>
+    <!-- 4. Katherine Johnson -->
+    <div class="timeline-item right">
+      <div class="content">
+        <img class="timeline-image" src="cattt.jpg" alt="Retrato de Katherine Johnson">
+        <div class="date">1961</div>
+        <h3>Katherine Johnson</h3>
+        <p>Matemática da NASA, seus cálculos foram fundamentais para as missões espaciais dos EUA, abrindo portas para futuras gerações de cientistas.</p>
+      </div>
+    </div>
+    <!-- 5. Patricia Bath -->
+    <div class="timeline-item left">
+      <div class="content">
+        <img class="timeline-image" src="patri.jpg" alt="Retrato de Patricia Bath">
+        <div class="date">1986</div>
+        <h3>Patricia Bath</h3>
+        <p>Inventora do Laserphaco, sua inovação transformou as cirurgias de catarata, tornando os procedimentos mais seguros e eficazes.</p>
+      </div>
+    </div>
+    <!-- 6. Mark Dean -->
+    <div class="timeline-item right">
+      <div class="content">
+        <img class="timeline-image" src="mark.jpg" alt="Retrato de Mark Dean">
+        <div class="date">1989</div>
+        <h3>Mark Dean</h3>
+        <p>Co-inventor da arquitetura do IBM PC, suas contribuições são a base para os computadores pessoais modernos e para o avanço da tecnologia da informação.</p>
+      </div>
+    </div>
+    <!-- 7. Mae Jemison -->
+    <div class="timeline-item left">
+      <div class="content">
+        <img class="timeline-image" src="mae.jpg" alt="Retrato de Mae Jemison">
+        <div class="date">1992</div>
+        <h3>Mae Jemison</h3>
+        <p>Primeira mulher negra a viajar ao espaço, Jemison é um ícone na exploração espacial e na promoção de carreiras em STEM para minorias.</p>
+      </div>
+    </div>
+    <!-- 8. Bernard Harris -->
+    <div class="timeline-item right">
+      <div class="content">
+        <img class="timeline-image" src="bernarddd.jpg" alt="Retrato de Bernard Harris">
+        <div class="date">1995</div>
+        <h3>Bernard Harris</h3>
+        <p>Primeiro astronauta negro a realizar uma caminhada espacial, seu trabalho inspira iniciativas de inclusão em programas espaciais e científicos.</p>
+      </div>
+    </div>
+    <!-- 9. Joy Buolamwini -->
+    <div class="timeline-item left">
+      <div class="content">
+        <img class="timeline-image" src="joyyy.jpg" alt="Retrato de Joy Buolamwini">
+        <div class="date">2015</div>
+        <h3>Joy Buolamwini</h3>
+        <p>Fundadora da Algorithmic Justice League, ela investiga e combate vieses em algoritmos, promovendo justiça e equidade na tecnologia.</p>
+      </div>
+    </div>
+    <!-- 10. Kizzmekia Corbett -->
+    <div class="timeline-item right">
+      <div class="content">
+        <img class="timeline-image" src="kizzz.jpg" alt="Retrato de Kizzmekia Corbett">
+        <div class="date">2020</div>
+        <h3>Kizzmekia Corbett</h3>
+        <p>Imunologista essencial no desenvolvimento das vacinas contra a COVID-19, Corbett representa a continuidade do legado de pioneiros na área da saúde.</p>
+      </div>
+    </div>
+    <a href="index.html" class="back-button">Voltar</a>
+  </div>
+
+  <script>
+    // Animação simples: adiciona a classe "visible" conforme o item entra na viewport
+    window.addEventListener('scroll', function() {
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add('visible');
+        }
+      });
+    });
+    // Verifica logo no carregamento da página
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+

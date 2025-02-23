@@ -1,260 +1,460 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankofa Científico</title>
-    <style>
-        :root {
-            --primary-color: #4A235A; /* Roxo escuro */
-            --secondary-color: #6C3483; /* Roxo médio */
-            --accent-color: #E74C3C; /* Vermelho */
-            --background-color: #F4F6F7; /* Cinza claro */
-            --text-color: #2C3E50; /* Azul escuro */
-            --button-bg: #E74C3C;
-            --button-hover: #C0392B;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            position: relative;
-            background: url('negros.jpg') no-repeat center center/cover;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 0;
-        }
-        header h1, nav {
-            position: relative;
-            z-index: 1;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            color: var(--text-color);
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 5px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .cientista-container,
-        .galeria-container,
-        .destaques-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .cientista, .galeria-item, .destaque {
-            background-color: var(--background-color);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 320px;
-            min-height: 420px;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .cientista:hover, .galeria-item:hover, .destaque:hover {
-            transform: scale(1.05);
-        }
-        .cientista img, .galeria-item img, .destaque img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .cientista p, .destaque p {
-            font-size: 14px;
-            text-align: justify;
-            padding: 0 10px;
-        }
-        .cientista a, .destaque a {
-            display: inline-block;
-            background-color: var(--button-bg);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-top: 10px;
-        }
-        .cientista a:hover, .destaque a:hover {
-            background-color: var(--button-hover);
-        }
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 20px;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-            .cientista-container, .galeria-container, .destaques-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            section {
-                width: 90%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankofa Científico</title>
+  <style>
+    :root {
+      --primary-color: #4A235A; 
+      --secondary-color: #6C3483; 
+      --accent-color: #E74C3C; 
+      --background-color: #F4F6F7;
+      --text-color: #2C3E50; 
+      --button-bg: #E74C3C;
+      --button-hover: #C0392B;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      position: relative;
+      background: url('negros.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    header h1, nav {
+      position: relative;
+      z-index: 1;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: var(--text-color);
+    }
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cientista-container,
+    .galeria-container,
+    .destaques-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .cientista, .galeria-item, .destaque {
+      background-color: var(--background-color);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      min-height: 420px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cientista:hover, .galeria-item:hover, .destaque:hover {
+      transform: scale(1.05);
+    }
+    .cientista img, .galeria-item img, .destaque img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .cientista p, .destaque p {
+      font-size: 14px;
+      text-align: justify;
+      padding: 0 10px;
+    }
+    .cientista a, .destaque a {
+      display: inline-block;
+      background-color: var(--button-bg);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    .cientista a:hover, .destaque a:hover {
+      background-color: var(--button-hover);
+    }
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      .cientista-container, .galeria-container, .destaques-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      section {
+        width: 90%;
+      }
+    }
+    /* ===================== Linha do Tempo ===================== */
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px 0;
+      z-index: 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: linear-gradient(var(--secondary-color), var(--primary-color));
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+      z-index: -1;
+    }
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 10px 40px;
+      margin-bottom: 30px;
+      background-color: inherit;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.8s ease, opacity 0.8s ease;
+      z-index: 1;
+    }
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .timeline-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: var(--background-color);
+      border: 4px solid var(--primary-color);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 2;
+      transition: background 0.3s ease;
+    }
+    .timeline-item:hover::after {
+      background: var(--accent-color);
+    }
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item.left::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      border: 10px solid transparent;
+      border-left-color: #fff;
+    }
+    .timeline-item.left::after {
+      right: -17px;
+    }
+    .timeline-item.right {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-item.right::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 30px;
+      border: 10px solid transparent;
+      border-right-color: #fff;
+    }
+    .timeline-item.right::after {
+      left: -17px;
+    }
+    .timeline-item .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+    .timeline-item .content {
+      padding: 20px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-top: 3px solid var(--primary-color);
+    }
+    .timeline-image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 600px) {
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left;
+      }
+      .timeline-item.left, .timeline-item.right {
+        left: 0;
+      }
+      .timeline-item.left::before, .timeline-item.right::before {
+        left: 60px;
+        border: 10px solid transparent;
+        border-right-color: #fff;
+      }
+      .timeline::after {
+        left: 31px;
+      }
+      .timeline-item::after {
+        left: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Sankofa Científico</h1>
-        <nav>
-            <ul>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="cientistas.html">Cientistas</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="#destaques">Curiosidades & Destaques</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Sankofa Científico</h1>
+    <nav>
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="cientistas.html">Cientistas</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="linhadotempo.html">Linha do Tempo</a></li>
+        <li><a href="#destaques">Curiosidades & Destaques</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Seção de Cientistas em Destaque -->
-    <section id="cientistas">
-        <h2>Cientistas em Destaque</h2>
-        <div class="cientista-container">
-            <div class="cientista">
-                <img src="Otis.jpg" alt="Otis Bobby Boykin">
-                <h3>Otis Bobby Boykin – Engenheiro Eletrônico</h3>
-                <p>Boykin desenvolveu um resistor elétrico mais confiável e econômico, usado em televisões, rádios e computadores. Sua inovação foi essencial para marcapassos, ajudando a salvar vidas.</p>
-                <a href="otis.html">Saiba mais</a>
-            </div>
-            <div class="cientista">
-                <img src="MARIA-ODILIA (1).webp" alt="Maria Odília Teixeira">
-                <h3>Maria Odília Teixeira</h3>
-                <p>Primeira médica negra do Brasil, pioneira na saúde e no ensino, enfrentando barreiras raciais e de gênero.</p>
-                <a href="maria.html">Saiba mais</a>
-            </div>
-        </div>
-    </section>
+  <!-- Seção: Cientistas em Destaque -->
+  <section id="cientistas">
+    <h2>Cientistas em Destaque</h2>
+    <div class="cientista-container">
+      <div class="cientista">
+        <img src="Otis.jpg" alt="Otis Bobby Boykin">
+        <h3>Otis Bobby Boykin – Engenheiro Eletrônico</h3>
+        <p>Boykin desenvolveu um resistor elétrico mais confiável e econômico, usado em televisões, rádios e computadores. Sua inovação foi essencial para marcapassos, ajudando a salvar vidas.</p>
+        <a href="otis.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="MARIA-ODILIA (1).webp" alt="Maria Odília Teixeira">
+        <h3>Maria Odília Teixeira</h3>
+        <p>Primeira médica negra do Brasil, pioneira na saúde e no ensino, enfrentando barreiras raciais e de gênero.</p>
+        <a href="maria.html">Saiba mais</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção de Galeria de Cientistas -->
-    <section id="galeria">
-        <h2>Galeria de Cientistas</h2>
-        <div class="galeria-container">
-            <div class="cientista">
-                <img src="lewis.jpeg" alt="Lewis Latimer">
-                <h3>Lewis Latimer – Inventor e Engenheiro</h3>
-                <p>Latimer foi um inventor e engenheiro que aprimorou a lâmpada elétrica de Thomas Edison, tornando-a mais acessível e durável. Sua invenção foi fundamental para a iluminação pública.</p>
-                <a href="lewis.html">Saiba mais</a>
-            </div>
-            <div class="cientista">
-                <img src="cat.jpg" alt="Katherine Johnson">
-                <h3>Katherine Johnson – Matemática e Física</h3>
-                <p>Johnson foi uma matemática e física que trabalhou na NASA, calculando trajetórias de voos espaciais. Sua contribuição foi fundamental para o sucesso da missão Apollo 11.</p>
-                <a href="catarina.html">Saiba mais</a>
-            </div>
-            <div class="cientista">
-                <img src="mary.jpg" alt="Marie Maynard Daly">
-                <h3>Marie Maynard Daly – Bioquímica</h3>
-                <p>Daly foi a primeira mulher negra a obter um doutorado em química nos Estados Unidos. Suas pesquisas contribuíram para o entendimento da relação entre dieta e saúde cardiovascular.</p>
-                <a href="mary.html">Saiba mais</a> 
-            </div>
-        </div>
-    </section>
+  <!-- Seção: Galeria de Cientistas -->
+  <section id="galeria">
+    <h2>Galeria de Cientistas</h2>
+    <div class="galeria-container">
+      <div class="cientista">
+        <img src="lewis.jpeg" alt="Lewis Latimer">
+        <h3>Lewis Latimer – Inventor e Engenheiro</h3>
+        <p>Latimer foi um inventor e engenheiro que aprimorou a lâmpada elétrica de Thomas Edison, tornando-a mais acessível e durável. Sua invenção foi fundamental para a iluminação pública.</p>
+        <a href="lewis.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="cat.jpg" alt="Katherine Johnson">
+        <h3>Katherine Johnson – Matemática e Física</h3>
+        <p>Johnson foi uma matemática e física que trabalhou na NASA, calculando trajetórias de voos espaciais. Sua contribuição foi fundamental para o sucesso da missão Apollo 11.</p>
+        <a href="catarina.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="mary.jpg" alt="Marie Maynard Daly">
+        <h3>Marie Maynard Daly – Bioquímica</h3>
+        <p>Daly foi a primeira mulher negra a obter um doutorado em química nos Estados Unidos. Suas pesquisas contribuíram para o entendimento da relação entre dieta e saúde cardiovascular.</p>
+        <a href="mary.html">Saiba mais</a> 
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção de Curiosidades & Destaques -->
-    <!-- Seção de Curiosidades & Destaques -->
-<section id="destaques">
+  <section id="destaques">
     <h2>Curiosidades & Destaques</h2>
     <div class="destaques-container">
-        <!-- Tópico 4: Avanços em Física e Tecnologia Médica -->
-        <div class="destaque">
-            <img src="hadiyy.webp" alt="Dra. Hadiyah-Nicole Green">
-            <h3>Avanços em Física e Tecnologia Médica</h3>
-            <p>
-                Inspirado no legado de Ernest Everett Just, observe como a Dra. Hadiyah-Nicole Green está revolucionando o tratamento do câncer com nanotecnologia e lasers, levando a medicina a novos patamares.
-            </p>
-            <a href="hadiy.html">Leia mais</a>
-        </div>
-        <!-- Tópico 6: Tecnologia, Inclusão e Impacto Social -->
-        <div class="destaque">
-            <img src="joy.jpg" alt="Dra. Joy Buolamwini">
-            <h3>Tecnologia, Inclusão e Impacto Social</h3>
-            <p>
-                De Garrett Morgan, inventor do semáforo automático, à luta contra algoritmos tendenciosos com a Dra. Joy Buolamwini, descubra como a tecnologia se reinventa para promover inclusão e justiça social.
-            </p>
-            <a href="joy.html">Leia mais</a>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Seção de Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
+      <div class="destaque">
+        <img src="hadiyy.webp" alt="Dra. Hadiyah-Nicole Green">
+        <h3>Avanços em Física e Tecnologia Médica</h3>
         <p>
-            <strong>Redes Sociais: Daniella Nunes</strong><br>
-            <a href="https://www.instagram.com/daniellanunestenorio/" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/daniella-nunes-ten%C3%B3rio-06a2b5324/" target="_blank">LinkedIn</a>
-          </p>
-        <!-- Aqui você pode inserir um formulário de contato ou informações adicionais -->
-    </section>
-    <footer>
-        <p>&copy; 2025 Sankofa Científico. Todos os direitos reservados.</p>
-    </footer>
+          Inspirado no legado de Ernest Everett Just, observe como a Dra. Hadiyah-Nicole Green está revolucionando o tratamento do câncer com nanotecnologia e lasers, levando a medicina a novos patamares.
+        </p>
+        <a href="hadiy.html">Leia mais</a>
+      </div>
+      <div class="destaque">
+        <img src="joy.jpg" alt="Dra. Joy Buolamwini">
+        <h3>Tecnologia, Inclusão e Impacto Social</h3>
+        <p>
+          Segue a tradição de inovadores negros na área de tecnologia, como Mark Dean, co-inventor da arquitetura do IBM PC, e Marian Croak, pioneira em protocolos de VoIP. Assim, mantém vivo o espírito de inovação e resistência em ambientes predominantemente brancos.
+        </p>
+        <a href="joy.html">Leia mais</a>
+      </div>
+      <div class="destaque">
+        <img src="neil.jpg" alt="Neil deGrasse Tyson">
+        <h3>Astrofísica e Divulgação Científica</h3>
+        <p>
+          Continua o trabalho de Benjamin Banneker, astrônomo e matemático negro pioneiro, e de outras figuras que lutaram para mostrar que pessoas negras também podem se destacar em ciências exatas.
+        </p>
+        <a href="neil.html">Leia Mais</a>
+      </div>
+      <div class="destaque">
+        <img src="jaqueline.jpg" alt="Dra. Jaqueline Goes de Jesus">
+        <h3>Biomedicina e Genômica</h3>
+        <p>
+          Está na mesma trilha de médicas e cientistas negras brasileiras como Maria Odília Teixeira (primeira médica negra do Brasil) e outras mulheres que abriram portas para a presença feminina negra na ciência.
+        </p>
+        <a href="jaqueline.html">Leia Mais</a>
+      </div>
+      <div class="destaque">
+        <img src="kizz.jpg" alt="Kizzmekia Shanta Corbett">
+        <h3>Imunologia e Vacinas</h3>
+        <p>
+          Segue os passos de médicas e cientistas negras que abriram caminho na área da saúde, como Rebecca Lee Crumpler e Patricia Bath, contribuindo para a evolução dos tratamentos médicos.
+        </p>
+        <a href="kizz.html">Leia Mais</a>
+      </div>
+      <div class="destaque">
+        <img src="sonia.jpg" alt="Sônia Guimarães">
+        <h3>Física e Educação</h3>
+        <p>
+          Segue o legado de pioneiros como Enedina Alves Marques e André Rebouças, mostrando que a superação de barreiras é possível com talento e persistência.
+        </p>
+        <a href="sonia.html">Leia Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>
+      <strong>Redes Sociais: Daniella Nunes</strong><br>
+      <a href="https://www.instagram.com/daniellanunestenorio/" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/daniella-nunes-ten%C3%B3rio-06a2b5324/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sankofa Científico. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script para exibir apenas 2 cards de "Curiosidades & Destaques" aleatoriamente -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const container = document.querySelector(".destaques-container");
+      if (container) {
+        // Cria um array com os elementos filhos (cards)
+        const items = Array.from(container.children);
+        // Função para embaralhar o array (Fisher-Yates)
+        function shuffleArray(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+        // Embaralha
+        const shuffledItems = shuffleArray(items);
+        // Seleciona apenas os 2 primeiros após o embaralhamento
+        const twoItems = shuffledItems.slice(0, 2);
+        // Limpa o container e reanexa só esses 2
+        container.innerHTML = "";
+        twoItems.forEach(item => container.appendChild(item));
+      }
+    });
+
+    // Animação para a linha do tempo
+    window.addEventListener('scroll', function() {
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add('visible');
+        }
+      });
+    });
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add('visible');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
 
 
 
