@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cientistas Negros na Computação - Sankofa Científico</title>
+  <style>
+    :root {
+      --primary-color: #4A235A; 
+      --secondary-color: #6C3483; 
+      --accent-color: #E74C3C; 
+      --background-color: #F4F6F7;
+      --text-color: #2C3E50; 
+      --button-bg: #E74C3C;
+      --button-hover: #C0392B;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: var(--secondary-color);
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .cientista-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .cientista {
+      background-color: var(--background-color);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .cientista:hover {
+      transform: scale(1.05);
+    }
+    .cientista img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .cientista p {
+      font-size: 14px;
+      text-align: justify;
+    }
+    .cientista a {
+      display: inline-block;
+      background-color: var(--button-bg);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .cientista a:hover {
+      background-color: var(--button-hover);
+    }
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cientistas Negros na Computação</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#computacao">Computação</a></li>
+    </ul>
+  </nav>
+  <section id="computacao">
+    <h2>Cientistas que Revolucionaram a Computação</h2>
+    <div class="cientista-container">
+      <div class="cientista">
+        <img src="jerry_lawson.jpg" alt="Jerry Lawson">
+        <h3>Jerry Lawson</h3>
+        <p>Criador dos cartuchos de videogame e pioneiro na indústria dos jogos eletrônicos.</p>
+      </div>
+      <div class="cientista">
+        <img src="marie_brown.jpg" alt="Marie Van Brittan Brown">
+        <h3>Marie Van Brittan Brown</h3>
+        <p>Inventora do primeiro sistema de videovigilância residencial.</p>
+      </div>
+      <div class="cientista">
+        <img src="john_henry_thompson.jpg" alt="John Henry Thompson">
+        <h3>John Henry Thompson</h3>
+        <p>Criador da linguagem Lingo, utilizada para multimídia e animações.</p>
+      </div>
+      <div class="cientista">
+        <img src="evelyn_granville.jpg" alt="Evelyn Boyd Granville">
+        <h3>Evelyn Boyd Granville</h3>
+        <p>Pioneira em cálculos computacionais para missões espaciais da NASA.</p>
+      </div>
+      <div class="cientista">
+        <img src="mark_dean.jpg" alt="Mark Dean">
+        <h3>Mark Dean – Engenheiro da Computação</h3>
+        <p>Co-inventor do PC e responsável por avanços em barramentos de dados e chips gráficos na IBM.</p>
+        <a href="mark.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="marian_croak.jpg" alt="Marian Croak">
+        <h3>Marian Croak – Pioneira em VoIP</h3>
+        <p>Pioneira no desenvolvimento da tecnologia VoIP, que permite chamadas de voz pela internet.</p>
+        <a href="marian.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="timothy_cotton.jpg" alt="Timothy Cotton">
+        <h3>Timothy Cotton – Arquitetura de Processadores</h3>
+        <p>Contribuiu para o desenvolvimento de arquiteturas de processadores e circuitos integrados de alta eficiência.</p>
+        <a href="timothy.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="kimberly_bryant.jpg" alt="Kimberly Bryant">
+        <h3>Kimberly Bryant – Fundadora da Black Girls Code</h3>
+        <p>Fundadora da Black Girls Code, que ensina programação para meninas negras.</p>
+        <a href="kimberly.html">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Sankofa Científico. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
