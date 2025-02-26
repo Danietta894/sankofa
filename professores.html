@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores Cientistas Negros - Sankofa Científico</title>
+    <style>
+        :root {
+            --primary-color: #4A235A;
+            --secondary-color: #6C3483;
+            --accent-color: #E74C3C;
+            --background-color: #F4F6F7;
+            --text-color: #2C3E50;
+            --button-bg: #E74C3C;
+            --button-hover: #C0392B;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid var(--primary-color);
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        .cientista-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .cientista {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            min-height: 420px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .cientista:hover {
+            transform: scale(1.05);
+        }
+        .cientista img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .cientista p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+        .cientista a {
+            display: inline-block;
+            background-color: var(--button-bg);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .cientista a:hover {
+            background-color: var(--button-hover);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Professores Cientistas Negros da Atualidade</h1>
+        <p>Esta seção apresenta professores e cientistas negros que estão na vanguarda da pesquisa e ensino em diversas áreas da ciência e tecnologia.</p>
+        
+        <div class="cientista-container">
+
+            <div class="cientista">
+                <img src="ayanna.jpg" alt="Ayanna Howard">
+                <h3>Ayanna Howard – Robótica e Inteligência Artificial</h3>
+                <p>Reitora da Faculdade de Engenharia da Universidade de Ohio e especialista em robótica assistiva e acessibilidade.</p>
+                <a href="ayanna.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="kizzmekia.jpg" alt="Kizzmekia Corbett">
+                <h3>Kizzmekia Corbett – Imunologista</h3>
+                <p>Professora na Harvard Medical School, foi uma das principais cientistas responsáveis pelo desenvolvimento das vacinas de mRNA contra a COVID-19.</p>
+                <a href="kizzmekia.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="aprille.jpg" alt="Aprille Ericsson">
+                <h3>Aprille Ericsson – Engenharia Aeroespacial</h3>
+                <p>Pesquisadora da NASA e professora, trabalhou no desenvolvimento de satélites e projetos climáticos.</p>
+                <a href="aprille.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="fern_hunt.jpg" alt="Fern Hunt">
+                <h3>Fern Hunt – Matemática Aplicada</h3>
+                <p>Matemática e pesquisadora do National Institute of Standards and Technology, especialista em modelagem matemática.</p>
+                <a href="fern.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="gladys_west.jpg" alt="Gladys West">
+                <h3>Gladys West – Matemática e Engenharia</h3>
+                <p>Contribuiu para o desenvolvimento do GPS e atualmente é reconhecida por seu impacto na engenharia geoespacial.</p>
+                <a href="gladys.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="ruha_benjamin.jpg" alt="Ruha Benjamin">
+                <h3>Ruha Benjamin – Sociologia e Tecnologia</h3>
+                <p>Professora de Estudos Africanos na Universidade de Princeton, estuda o impacto da tecnologia na sociedade.</p>
+                <a href="ruha.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="sylvester_gates.jpg" alt="Sylvester James Gates">
+                <h3>Sylvester James Gates – Física Teórica</h3>
+                <p>Professor na Universidade de Maryland e especialista em supersimetria e teoria das cordas.</p>
+                <a href="sylvester.html">Saiba mais</a>
+            </div>
+
+            <div class="cientista">
+                <img src="marian_croak.jpg" alt="Marian Croak">
+                <h3>Marian Croak – Engenharia de Telecomunicações</h3>
+                <p>Pioneira da tecnologia VoIP, leciona e pesquisa inovações em comunicação digital.</p>
+                <a href="marian.html">Saiba mais</a>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Voltar</a>
+
+</body>
+</html>

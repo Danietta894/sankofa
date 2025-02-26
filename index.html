@@ -153,7 +153,7 @@
         width: 90%;
       }
     }
-    /* ===================== Linha do Tempo ===================== */
+   
     .timeline {
       position: relative;
       max-width: 1000px;
@@ -278,6 +278,24 @@
         left: 15px;
       }
     }
+    .lista-completa {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: var(--button-bg);
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .lista-completa:hover {
+        background-color: var(--button-hover);
+        transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -315,7 +333,7 @@
     </div>
   </section>
 
-  <!-- Seção: Galeria de Cientistas -->
+  
   <section id="galeria">
     <h2> <a href="galeria.html">Galeria De Cientistas</a></h2>
     <div class="galeria-container">
@@ -400,7 +418,7 @@
         <img src="markk.jpg" alt="Mark Dean">
         <h3>Mark Dean – Engenheiro da Computação</h3>
         <p>Co-inventor do PC e responsável por avanços em barramentos de dados e chips gráficos na IBM.</p>
-        <a href="mar">Saiba mais</a>
+        <a href="mark.html">Saiba mais</a>
       </div>
       <div class="cientista">
         <img src="marian.jpg" alt="Marian Croak">
@@ -415,9 +433,11 @@
         <a href="kimberly.html">Saiba mais</a>
       </div>
     </div>
-  </section>
+    <a href="cientistascomputa.html" class="lista-completa">Lista Completa</a>
+</section>
 
-  <!-- Seção: Contato -->
+
+
   <section id="contato">
     <h2>Contato</h2>
     <p>
@@ -431,14 +451,14 @@
     <p>&copy; 2025 Sankofa Científico. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Script para exibir apenas 2 cards de "Curiosidades & Destaques" aleatoriamente -->
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const container = document.querySelector(".destaques-container");
       if (container) {
-        // Cria um array com os elementos filhos (cards)
+       
         const items = Array.from(container.children);
-        // Função para embaralhar o array (Fisher-Yates)
+      
         function shuffleArray(array) {
           for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -446,17 +466,17 @@
           }
           return array;
         }
-        // Embaralha
+   
         const shuffledItems = shuffleArray(items);
-        // Seleciona apenas os 2 primeiros após o embaralhamento
+       
         const twoItems = shuffledItems.slice(0, 2);
-        // Limpa o container e reanexa só esses 2
+     
         container.innerHTML = "";
         twoItems.forEach(item => container.appendChild(item));
       }
     });
 
-    // Animação para a linha do tempo
+   
     window.addEventListener('scroll', function() {
       document.querySelectorAll('.timeline-item').forEach(item => {
         const rect = item.getBoundingClientRect();

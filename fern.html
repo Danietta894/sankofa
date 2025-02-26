@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fern Hunt</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('fundo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 5px solid #4A235A;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right, #4A235A, #E74C3C);
+    }
+    h1 {
+      color: #4A235A;
+      font-size: 30px;
+      text-transform: uppercase;
+      border-bottom: 4px solid #6C3483;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      width: 280px;
+      border-radius: 10px;
+      border: 6px solid #6C3483;
+      transition: transform 0.3s ease-in-out;
+    }
+    .img-container img:hover {
+      transform: scale(1.1);
+    }
+    .text-box {
+      border: 5px solid #6C3483;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      background: #f9e6ff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+    h2 {
+      color: white;
+      background: #4A235A;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 22px;
+      display: inline-block;
+    }
+    .button {
+      display: inline-block;
+      padding: 14px 20px;
+      background-color: #E74C3C;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 17px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #C0392B;
+      transform: scale(1.05);
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4A235A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    .back-button:hover {
+      background-color: #6C3483;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fern Hunt</h1>
+    <div class="img-container">
+      <img src="fer.jpg" alt="Fern Hunt">
+    </div>
+    <div class="text-box">
+      Fern Hunt é uma renomada matemática e cientista da computação americana, amplamente reconhecida por suas pesquisas inovadoras na **teoria da probabilidade, sistemas dinâmicos e criptografia**. Ela trabalhou por muitos anos no **National Institute of Standards and Technology (NIST)**, onde suas pesquisas ajudaram a moldar a segurança digital moderna e o desenvolvimento de algoritmos criptográficos avançados.
+      Além disso, suas contribuições foram fundamentais para a aplicação de modelos matemáticos na **biologia e biodiversidade**, ajudando a prever mudanças ecológicas e impactos ambientais de longo prazo. Hunt também se destacou como **mentora e defensora da diversidade** na ciência e tecnologia, inspirando novas gerações de matemáticos e cientistas negros.
+    </div>
+    <h2>Principais Contribuições</h2>
+    <div class="text-box">
+      <ul>
+        <li>Pioneira no uso da teoria da probabilidade para criptografia e segurança digital.</li>
+        <li>Pesquisadora em **modelagem matemática de biodiversidade** para prever mudanças ecológicas.</li>
+        <li>Desenvolveu aplicações de **sistemas dinâmicos** para prever padrões caóticos em fenômenos naturais.</li>
+        <li>Trabalhou na **otimização de algoritmos para segurança cibernética**.</li>
+        <li>Defensora ativa da inclusão de mulheres e minorias na matemática e ciência da computação.</li>
+      </ul>
+    </div>
+    <h2>Saiba mais</h2>
+    <div class="text-box">
+      <ul>
+        <li><a href="https://www.math.buffalo.edu/mad/PEEPS/hunt_ferny.html" target="_blank">Perfil em Buffalo University</a></li>
+        <li><a href="https://www.origoeducation.com/mathematicians/fern-hunt-biodiversity-and-mathematics" target="_blank">Fern Hunt e a biodiversidade</a></li>
+        <li><a href="https://nces.ed.gov/nceskids/grabbag/mathquiz/mathresult.asp?coolest=j" target="_blank">Matemática divertida com Fern Hunt</a></li>
+        <li><a href="https://wonderopolis.org/wonder/Who-Is-Fern-Hunt" target="_blank">Quem é Fern Hunt?</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="back-button">Voltar</a>
+  </div>
+</body>
+</html>

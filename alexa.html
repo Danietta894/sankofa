@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexa Canady</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('fundo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 5px solid #4A235A;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right, #4A235A, #E74C3C);
+    }
+    h1 {
+      color: #4A235A;
+      font-size: 30px;
+      text-transform: uppercase;
+      border-bottom: 4px solid #6C3483;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      width: 280px;
+      border-radius: 10px;
+      border: 6px solid #6C3483;
+      transition: transform 0.3s ease-in-out;
+    }
+    .img-container img:hover {
+      transform: scale(1.1);
+    }
+    .text-box {
+      border: 5px solid #6C3483;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      background: #f9e6ff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+    h2 {
+      color: white;
+      background: #4A235A;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 22px;
+      display: inline-block;
+    }
+    .button {
+      display: inline-block;
+      padding: 14px 20px;
+      background-color: #E74C3C;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 17px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #C0392B;
+      transform: scale(1.05);
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #4A235A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    .back-button:hover {
+      background-color: #6C3483;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Alexa Canady</h1>
+    <div class="img-container">
+      <img src="alexa.jpg" alt="Alexa Canady">
+    </div>
+    <div class="text-box">
+      Alexa Canady foi a primeira mulher negra a se tornar neurocirurgiã nos Estados Unidos. Ela quebrou barreiras na medicina e se destacou por suas contribuições na neurocirurgia pediátrica, tornando-se referência no tratamento de doenças cerebrais infantis. Sua trajetória inspiradora é um exemplo de perseverança, dedicação e compromisso com a ciência e o bem-estar das crianças.
+    </div>
+    <h2>Principais Contribuições</h2>
+    <div class="text-box">
+      <ul>
+        <li>Primeira mulher negra a se tornar neurocirurgiã nos EUA.</li>
+        <li>Pesquisas pioneiras no tratamento de hidrocefalia em crianças.</li>
+        <li>Desenvolvimento de técnicas cirúrgicas avançadas para tratar condições neurológicas pediátricas.</li>
+        <li>Defesa da equidade no atendimento médico e no acesso à educação para mulheres e minorias.</li>
+        <li>Recebeu inúmeros prêmios por suas contribuições na área médica.</li>
+      </ul>
+    </div>
+    <h2>Saiba mais</h2>
+    <div class="text-box">
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Alexa_Canady" target="_blank">Biografia na Wikipedia</a></li>
+        <li><a href="https://www.amazon.com.br/Alexa-Irene-Canady-Incredible-Neurosurgeon-ebook/dp/B09T2KJKFX" target="_blank">Livro sobre Alexa Canady</a></li>
+        <li><a href="https://www.thehistorymakers.org/biography/dr-alexa-canady-davis-41" target="_blank">História na The History Makers</a></li>
+        <li><a href="https://cfmedicine.nlm.nih.gov/physicians/biography_53.html" target="_blank">Perfil no National Library of Medicine</a></li>
+        <li><a href="https://kids.britannica.com/kids/article/Alexa-Canady/633392" target="_blank">Alexa Canady na Britannica Kids</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="back-button">Voltar</a>
+  </div>
+</body>
+</html>
