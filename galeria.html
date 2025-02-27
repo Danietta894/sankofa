@@ -142,12 +142,24 @@
             padding: 10px 15px;
             border-radius: 50%;
             text-align: center;
-            cursor: pointer;
             display: none;
+            cursor: pointer;
             transition: 0.3s;
         }
         #topo:hover {
             background: var(--secondary-color);
+        }
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                padding: 10px;
+                
+            }
+            .menu a {
+                padding: 8px;
+                margin: 0;
+                font-size: 12px;
+            }
         }
 
     </style>
@@ -160,6 +172,7 @@
         <a href="#medicina">Medicina</a>
         <a href="#engenharia">Engenharia</a>
         <a href="#humanas">Humanas</a>
+        <a href="#biociencias">Biociências</a>
         <a href="#quimica">Química</a>
         <a href="#top">Topo</a>
     </div>
@@ -169,7 +182,7 @@
         <p>Conheça cientistas e inventores negros que contribuíram para diferentes áreas do conhecimento.</p>
 
         <!-- Ciências Exatas -->
-        <div class="area">
+        <div class="area" id="exatas">
             <h2>Ciências Exatas</h2>
             <div class="cientista-container">
                 <div class="cientista">
@@ -212,7 +225,7 @@
         </div>
 
         <!-- Medicina e Saúde -->
-        <div class="area">
+        <div class="area" id="medicina">
             <h2>Medicina e Saúde</h2>
             <div class="cientista-container">
                 <div class="cientista">
@@ -262,7 +275,7 @@
         </div>
 
         <!-- Engenharia e Tecnologia -->
-        <div class="area">
+        <div class="area" id="engenharia">
             <h2>Engenharia e Tecnologia</h2>
             <div class="cientista-container">
                 <div class="cientista">
@@ -301,7 +314,7 @@
         </div>
 
         <!-- Ciências Sociais e Humanas -->
-        <div class="area">
+        <div class="area" id="humanas">
             <h2>Ciências Sociais e Humanas</h2>
             <div class="cientista-container">
                 <div class="cientista">
@@ -326,7 +339,7 @@
         </div>
 
         <!-- Agricultura e Biociências -->
-        <div class="area">
+        <div class="area" id="biociencias">
             <h2>Agricultura e Biociências</h2>
             <div class="cientista-container">
                 <div class="cientista">
@@ -362,7 +375,7 @@
             </div>
         </div>
         <!-- Química -->
-<div class="area">
+<div class="area" id="quimica">
     <h2>Química</h2>
     <div class="cientista-container">
         <div class="cientista">

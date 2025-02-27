@@ -111,6 +111,45 @@
             background-color: var(--secondary-color);
             transform: scale(1.05);
         }
+        .container {
+            max-width: 1000px;
+            margin: 80px auto; /* Ajuste para o menu fixo */
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid var(--primary-color);
+        }
+        .area {
+            margin-top: 30px;
+            padding: 15px;
+            border: 4px solid var(--primary-color);
+            border-radius: 12px;
+            background: #f9e6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:20px;           
+        }
+          /* ✅ Botão Voltar ao Topo */
+          #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
+            color: rgb(179, 50, 161);
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+        }
+        #topo:hover {
+            background: var(--secondary-color);
+        }   
     </style>
 </head>
 <body>
@@ -118,7 +157,7 @@
         <h1>Cientistas Destacados</h1>
         <p>Esta seção apresenta cientistas e inventores negros cujas contribuições revolucionaram diversas áreas do conhecimento.</p>
         
-        <div class="cientista-container">
+        <div class="area">
             <div class="cientista">
                 <img src="Otis.jpg" alt="Otis Bobby Boykin">
                 <h3>Otis Bobby Boykin – Engenheiro Eletrônico</h3>
@@ -210,6 +249,16 @@
         </div>
         
     </div>
-    <a href="index.html" class="back-button">Voltar</a>
+      <!-- ✅ Botão Voltar ao Topo -->
+      <button id="topo" onclick="scrollToTop()">↑</button>
+      <script>
+        // Função para mostrar/ocultar botão de voltar ao topo
+        window.onscroll = function() {
+            document.getElementById("topo").style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
 </body>
 </html>
