@@ -16,24 +16,40 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-image: url('fundo.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+            background-color: var(--background-color);
             color: var(--text-color);
             margin: 0;
             padding: 0;
         }
+
+        /* ✅ Menu Fixo */
+        .menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--primary-color);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 1000px;
-            margin: 30px auto;
-            background: rgba(255, 255, 255, 0.95);
+            margin: 80px auto; /* Ajuste para o menu fixo */
             padding: 25px;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 12px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             text-align: center;
             border: 5px solid var(--primary-color);
         }
+
         h1 {
             color: var(--primary-color);
             font-size: 30px;
@@ -42,6 +58,7 @@
             display: inline-block;
             padding-bottom: 5px;
         }
+
         .area {
             margin-top: 30px;
             padding: 15px;
@@ -50,6 +67,7 @@
             background: #f9e6ff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             color: white;
             background: var(--primary-color);
@@ -58,6 +76,7 @@
             font-size: 22px;
             text-align: center;
         }
+
         .cientista-container {
             display: flex;
             flex-wrap: wrap;
@@ -65,6 +84,7 @@
             justify-content: center;
             margin-top: 20px;
         }
+
         .cientista {
             background-color: var(--background-color);
             padding: 20px;
@@ -78,20 +98,24 @@
             flex-direction: column;
             justify-content: space-between;
         }
+
         .cientista:hover {
             transform: scale(1.05);
         }
+
         .cientista img {
             width: 100%;
             height: 300px;
             object-fit: cover;
             border-radius: 8px;
         }
+
         .cientista p {
             font-size: 14px;
             text-align: justify;
             padding: 0 10px;
         }
+
         .cientista a {
             display: inline-block;
             background-color: var(--button-bg);
@@ -103,28 +127,43 @@
             transition: background-color 0.3s;
             margin-top: 10px;
         }
+
         .cientista a:hover {
             background-color: var(--button-hover);
         }
-        .back-button {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: var(--primary-color);
+
+        /* ✅ Botão Voltar ao Topo */
+        #topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary-color);
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 15px;
-            transition: background 0.3s, transform 0.2s;
-            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
         }
-        .back-button:hover {
-            background-color: var(--secondary-color);
-            transform: scale(1.05);
+        #topo:hover {
+            background: var(--secondary-color);
         }
+
     </style>
 </head>
 <body>
+
+    <!-- ✅ Menu Fixo -->
+    <div class="menu">
+        <a href="#exatas">Ciências Exatas</a>
+        <a href="#medicina">Medicina</a>
+        <a href="#engenharia">Engenharia</a>
+        <a href="#humanas">Humanas</a>
+        <a href="#quimica">Química</a>
+        <a href="#top">Topo</a>
+    </div>
+
     <div class="container">
         <h1>Cientistas por Área</h1>
         <p>Conheça cientistas e inventores negros que contribuíram para diferentes áreas do conhecimento.</p>
@@ -365,8 +404,24 @@
     </div>
 </div>
 
-        <a href="index.html" class="back-button">Voltar</a>
+
+        <!-- ✅ Adicionar outras áreas aqui -->
+
     </div>
+
+    <!-- ✅ Botão Voltar ao Topo -->
+    <button id="topo" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Função para mostrar/ocultar botão de voltar ao topo
+        window.onscroll = function() {
+            document.getElementById("topo").style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
 </body>
 </html>
 
