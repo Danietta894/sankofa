@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Franklin Grant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #154360;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, #154360, #27AE60);
+        }
+        h1 {
+            color: #154360;
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #1F618D;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            width: 280px;
+            border-radius: 10px;
+            border: 6px solid #1F618D;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+        .text-box {
+            border: 5px solid #1F618D;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #E8F8F5;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+            background: #154360;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: #27AE60;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #229954;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #154360;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #1F618D;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>George Franklin Grant</h1>
+        <div class="img-container">
+            <img src="george.grant_.portrait_web.jpg" alt="George Franklin Grant">
+        </div>
+        <div class="text-box">
+            George Franklin Grant foi um inventor e dentista afro-americano, conhecido por suas contribuições tanto para a odontologia quanto para o golfe. Ele foi o primeiro professor negro da Harvard School of Dental Medicine e fez importantes avanços no tratamento de fissuras palatinas. Além disso, Grant patenteou o primeiro tee de golfe moderno, tornando o jogo mais acessível e padronizado.
+        </div>
+        <h2>Principais Contribuições</h2>
+        <div class="text-box">
+            <ul>
+                <li>Primeiro professor negro da Harvard School of Dental Medicine.</li>
+                <li>Desenvolveu técnicas avançadas para o tratamento de fissuras palatinas.</li>
+                <li>Patenteou o primeiro tee de golfe moderno, usado até hoje.</li>
+                <li>Teve um impacto duradouro tanto na odontologia quanto no esporte.</li>
+            </ul>
+        </div>
+        <h2>Saiba mais</h2>
+        <div class="text-box">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/George_Franklin_Grant" target="_blank">Wikipedia</a></li>
+                <li><a href="https://www.hsdm.harvard.edu/news/trailblazer-inventor-scholar-dr-george-grant-takes-his-place-history" target="_blank">Harvard School of Dental Medicine</a></li>
+                <li><a href="http://ivy50.com/blackhistory/story.aspx?sid=1/13/2009" target="_blank">Ivy 50 Black History</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>

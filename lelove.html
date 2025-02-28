@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lee Love</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #8E44AD;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, #8E44AD, #E67E22);
+        }
+        h1 {
+            color: #8E44AD;
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #9B59B6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            width: 280px;
+            border-radius: 10px;
+            border: 6px solid #9B59B6;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+        .text-box {
+            border: 5px solid #9B59B6;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #F5EEF8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+            background: #8E44AD;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: #E67E22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #D35400;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #8E44AD;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #9B59B6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>John Lee Love</h1>
+        <div class="img-container">
+            <img src="leelove.jpeg" alt="John Lee Love">
+        </div>
+        <div class="text-box">
+            John Lee Love foi um inventor afro-americano, mais conhecido por criar um dos primeiros apontadores de lápis portáteis. Em 1897, ele patenteou um design simples e eficiente, permitindo que estudantes, artistas e trabalhadores pudessem afiar seus lápis com facilidade. Sua invenção continua sendo a base para os apontadores modernos.
+        </div>
+        <h2>Principais Contribuições</h2>
+        <div class="text-box">
+            <ul>
+                <li>Patenteou um dos primeiros apontadores de lápis portáteis.</li>
+                <li>Seu design influenciou os modelos de apontadores que usamos até hoje.</li>
+                <li>Também trabalhou em melhorias para equipamentos de construção.</li>
+                <li>Seu legado mostra como inovações simples podem ter um impacto duradouro.</li>
+            </ul>
+        </div>
+        <h2>Saiba mais</h2>
+        <div class="text-box">
+            <ul>
+                <li><a href="https://www.thoughtco.com/john-lee-love-profile-1992097" target="_blank">ThoughtCo</a></li>
+                <li><a href="http://negrosgeniais.blogspot.com/2014/05/john-lee-love-inventor-do-apontador-de.html" target="_blank">Negros Geniais</a></li>
+                <li><a href="https://www.blackpast.org/african-american-history/love-john-lee-1931/" target="_blank">Black Past</a></li>
+                <li><a href="https://pt.dorit-meir.com/biografia-de-john-lee-love-inventor-do-apontador-de-lapis-portatil" target="_blank">Dorit Meir</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>

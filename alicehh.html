@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice H. Parker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #884EA0;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, #884EA0, #E74C3C);
+        }
+        h1 {
+            color: #884EA0;
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #9B59B6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            width: 280px;
+            border-radius: 10px;
+            border: 6px solid #9B59B6;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+        .text-box {
+            border: 5px solid #9B59B6;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #F5EEF8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+            background: #884EA0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: #E74C3C;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #C0392B;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #884EA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #9B59B6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alice H. Parker</h1>
+        <div class="img-container">
+            <img src="aliceh.jpg" alt="Alice H. Parker">
+        </div>
+        <div class="text-box">
+            Alice H. Parker foi uma inventora afro-americana que revolucionou a indústria de aquecimento doméstico. Em 1919, ela patenteou um sistema inovador de aquecimento central movido a gás, permitindo maior eficiência energética e distribuição de calor para diferentes áreas de uma casa. Seu trabalho foi pioneiro e serviu de base para os modernos sistemas de aquecimento central que usamos hoje.
+        </div>
+        <h2>Principais Contribuições</h2>
+        <div class="text-box">
+            <ul>
+                <li>Patenteou um sistema de aquecimento central movido a gás em 1919.</li>
+                <li>Seu projeto inovador aumentou a eficiência e a segurança dos sistemas de aquecimento.</li>
+                <li>Abriu caminho para a evolução dos sistemas modernos de calefação residencial.</li>
+                <li>Foi uma das primeiras mulheres afro-americanas a registrar uma patente no setor de aquecimento.</li>
+            </ul>
+        </div>
+        <h2>Saiba mais</h2>
+        <div class="text-box">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Alice_H._Parker" target="_blank">Wikipedia</a></li>
+                <li><a href="https://lemelson.mit.edu/resources/alice-h-parker" target="_blank">Lemelson-MIT</a></li>
+                <li><a href="https://www.canarymedia.com/articles/enn/what-we-know-about-alice-parker-a-hidden-figure-in-modern-heating" target="_blank">Canary Media</a></li>
+                <li><a href="https://www.blackpast.org/african-american-history/parker-alice-h-1895/" target="_blank">Black Past</a></li>
+                <li><a href="https://thedig.howard.edu/all-stories/brought-you-howard-alice-h-parkers-historic-patent-gas-heater-warms-world" target="_blank">Howard University</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>

@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cientistas Negros na Computação - Sankofa Científico</title>
   <style>
     :root {
-      --primary-color: #4A235A; 
-      --secondary-color: #6C3483; 
-      --accent-color: #E74C3C; 
+      --primary-color: #4A235A;
+      --secondary-color: #6C3483;
+      --accent-color: #E74C3C;
       --background-color: #F4F6F7;
-      --text-color: #2C3E50; 
+      --text-color: #2C3E50;
       --button-bg: #E74C3C;
       --button-hover: #C0392B;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Arial', sans-serif;
       background-color: var(--background-color);
@@ -26,12 +29,14 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: var(--primary-color);
       padding: 20px;
       text-align: center;
       color: white;
     }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -40,11 +45,13 @@
       padding: 10px;
       background-color: var(--secondary-color);
     }
+
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
       max-width: 900px;
       margin: 40px auto;
@@ -53,17 +60,20 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     h2 {
       color: var(--primary-color);
       text-align: center;
       margin-bottom: 20px;
     }
+
     .cientista-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
+
     .cientista {
       background-color: var(--background-color);
       padding: 20px;
@@ -73,19 +83,23 @@
       text-align: center;
       transition: transform 0.3s;
     }
+
     .cientista:hover {
       transform: scale(1.05);
     }
+
     .cientista img {
       width: 100%;
       height: 300px;
       object-fit: cover;
       border-radius: 8px;
     }
+
     .cientista p {
       font-size: 14px;
       text-align: justify;
     }
+
     .cientista a {
       display: inline-block;
       background-color: var(--button-bg);
@@ -96,9 +110,11 @@
       font-weight: bold;
       transition: background-color 0.3s;
     }
+
     .cientista a:hover {
       background-color: var(--button-hover);
     }
+
     footer {
       background-color: var(--primary-color);
       color: white;
@@ -106,25 +122,28 @@
       padding: 1rem;
       margin-top: 20px;
     }
+
     /* ✅ Botão Voltar ao Topo */
     #topo {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--primary-color);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50%;
-            text-align: center;
-            display: none;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        #topo:hover {
-            background: var(--secondary-color);
-        }
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary-color);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-align: center;
+      display: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #topo:hover {
+      background: var(--secondary-color);
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Cientistas Negros na Computação</h1>
@@ -138,32 +157,106 @@
   <section id="computacao">
     <h2>Cientistas que Revolucionaram a Computação</h2>
     <div class="cientista-container">
-      <div class="cientista"><img src="Jerry_lawson_ca_1980.png" alt="Jerry Lawson"><h3>Jerry Lawson</h3><p>Criador dos cartuchos de videogame e pioneiro na indústria dos jogos eletrônicos.</p><a href="jerry.html">Saiba mais</a></div>
-      <div class="cientista"><img src="marieee.jpg" alt="Marie Van Brittan Brown"><h3>Marie Van Brittan Brown</h3><p>Inventora do primeiro sistema de videovigilância residencial.</p><a href="marievan.html">Saiba mais</a></div>
-      <div class="cientista"><img src="John_Henry_Thompson_and_IBM_PC_1984.jpg" alt="John Henry Thompson"><h3>John Henry Thompson</h3><p>Criador da linguagem Lingo, utilizada para multimídia e animações.</p><a href="john.html">Saiba mais</a></div>
-      <div class="cientista"><img src="markk.jpg" alt="Mark Dean"><h3>Mark Dean</h3><p>Co-inventor do PC e responsável por avanços na IBM.</p><a href="mark.html">Saiba mais</a></div>
-      <div class="cientista"><img src="mariannn.jpg" alt="Marian Croak"><h3>Marian Croak</h3><p>Pioneira no desenvolvimento da tecnologia VoIP.</p><a href="marian.html">Saiba mais</a></div>
-      <div class="cientista"><img src="kimberly.jpg" alt="Kimberly Bryant"><h3>Kimberly Bryant</h3><p>Fundadora da Black Girls Code, ensinando programação para meninas negras.</p><a href="kimberly.html">Saiba mais</a></div>
-      <div class="cientista"><img src="anie.jpg" alt="Annie Easley"><h3>Annie Easley</h3><p>Matemática e cientista da computação da NASA.</p><a href="annie.html">Saiba mais</a></div>
-      <div class="cientista"><img src="GladysWest.png" alt="Gladys West"><h3>Gladys West</h3><p>Contribuiu para o desenvolvimento do GPS.</p><a href="glandys.html">Saiba mais</a></div>
-      <div class="cientista"><img src="ayanna-howard-photo.jpg" alt="Ayanna Howard"><h3>Ayanna Howard</h3><p>Especialista em inteligência artificial e robótica.</p><a href="ayanna.html">Saiba mais</a></div>
-      <div class="cientista"><img src="lisa.jpg" alt="Lisa Gelobter"><h3>Lisa Gelobter</h3><p>Desenvolveu tecnologia usada nos GIFs animados.</p><a href="lisa.html">Saiba mais</a></div>
-      <div class="cientista"><img src="fer.jpg" alt="Fern Hunt"><h3>Fern Hunt</h3><p>Matemática e cientista da computação, conhecida por suas pesquisas em teoria do caos e análise numérica.</p><a href="fern.html">Saiba mais</a></div>
-      <div class="cientista"><img src="kennety.jpg" alt="Kenneth J. Dunkley"><h3>Kenneth J. Dunkley</h3><p>Inventor das lentes de visão tridimensional sem óculos especiais.</p><a href="kennety.html">Saiba mais</a></div>
-      <div class="cientista"><img src="melba.jpg" alt="Melba Roy Mouton"><h3>Melba Roy Mouton</h3><p>Matemática e cientista da NASA, responsável pelo rastreamento de satélites.</p><a href="melba.html">Saiba mais</a></div>
-        <div class="cientista">
-          <img src="evelyn.jpg" alt="Evelyn Boyd Granville">
-          <h3>Evelyn Boyd Granville – Matemática</h3>
-          <p>Uma das primeiras mulheres negras a obter um PhD em matemática nos EUA, contribuiu para a NASA em cálculos de missões espaciais.</p>
-          <a href="evelyn.html">Saiba mais</a>
-        </div>
-        <div class="cientista">
-          <img src="philip.jpg" alt="Philip Emeagwali">
-          <h3>Philip Emeagwali – Cientista da Computação</h3>
-          <p>Philip Emeagwali é um cientista da computação nigeriano conhecido por seu trabalho pioneiro em computação paralela, que ajudou a revolucionar o processamento de dados.</p>
-          <a href="philip.html">Saiba mais</a>
-       </div>
+
+      <div class="cientista">
+        <img src="anie.jpg" alt="Annie Easley">
+        <h3>Annie Easley</h3>
+        <p>Matemática e cientista da computação da NASA.</p>
+        <a href="annie.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="ayanna-howard-photo.jpg" alt="Ayanna Howard">
+        <h3>Ayanna Howard</h3>
+        <p>Especialista em inteligência artificial e robótica.</p>
+        <a href="ayanna.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="evelyn.jpg" alt="Evelyn Boyd Granville">
+        <h3>Evelyn Boyd Granville – Matemática</h3>
+        <p>Uma das primeiras mulheres negras a obter um PhD em matemática nos EUA, contribuiu para a NASA em cálculos de
+          missões espaciais.</p>
+        <a href="evelyn.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="fer.jpg" alt="Fern Hunt">
+        <h3>Fern Hunt</h3>
+        <p>Matemática e cientista da computação, conhecida por suas pesquisas em teoria do caos e análise numérica.</p>
+        <a href="fern.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="GladysWest.png" alt="Gladys West">
+        <h3>Gladys West</h3>
+        <p>Contribuiu para o desenvolvimento do GPS.</p>
+        <a href="glandys.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="Jerry_lawson_ca_1980.png" alt="Jerry Lawson">
+        <h3>Jerry Lawson</h3>
+        <p>Criador dos cartuchos de videogame e pioneiro na indústria dos jogos eletrônicos.</p>
+        <a href="jerry.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="John_Henry_Thompson_and_IBM_PC_1984.jpg" alt="John Henry Thompson">
+        <h3>John Henry Thompson</h3>
+        <p>Criador da linguagem Lingo, utilizada para multimídia e animações.</p>
+        <a href="john.html">Saiba mais</a>
+      </div>
+      <div class="cientista"><img src="kennety.jpg" alt="Kenneth J. Dunkley">
+        <h3>Kenneth J. Dunkley</h3>
+        <p>Inventor das lentes de visão tridimensional sem óculos especiais.</p>
+        <a href="kennety.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="kimberly.jpg" alt="Kimberly Bryant">
+        <h3>Kimberly Bryant</h3>
+        <p>Fundadora da Black Girls Code, ensinando programação para meninas negras.</p>
+        <a href="kimberly.html">Saiba mais</a>
+      </div>
+     
+      <div class="cientista"><img src="lisa.jpg" alt="Lisa Gelobter">
+        <h3>Lisa Gelobter</h3>
+        <p>Desenvolveu tecnologia usada nos GIFs animados.</p><a href="lisa.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="mariannn.jpg" alt="Marian Croak">
+        <h3>Marian Croak</h3>
+        <p>Pioneira no desenvolvimento da tecnologia VoIP.</p>
+        <a href="marian.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="marieee.jpg" alt="Marie Van Brittan Brown">
+        <h3>Marie Van Brittan Brown</h3>
+        <p>Inventora do primeiro sistema de videovigilância residencial.</p>
+        <a href="marievan.html">Saiba mais</a>
+      </div>
+      <div class="cientista">
+        <img src="markk.jpg" alt="Mark Dean">
+        <h3>Mark Dean</h3>
+        <p>Co-inventor do PC e responsável por avanços na IBM.</p>
+        <a href="mark.html">Saiba mais</a>
+      </div>
+      <div class="cientista"><img src="melba.jpg" alt="Melba Roy Mouton">
+        <h3>Melba Roy Mouton</h3>
+        <p>Matemática e cientista da NASA, responsável pelo rastreamento de satélites.</p>
+        <a href="melba.html">Saiba mais</a>
+      </div>
       
+     
+     
+      
+      
+
+    
+      
+      
+      <div class="cientista">
+        <img src="philip.jpg" alt="Philip Emeagwali">
+        <h3>Philip Emeagwali – Cientista da Computação</h3>
+        <p>Philip Emeagwali é um cientista da computação nigeriano conhecido por seu trabalho pioneiro em computação
+          paralela, que ajudou a revolucionar o processamento de dados.</p>
+        <a href="philip.html">Saiba mais</a>
+      </div>
+
     </div>
     </div>
   </section>
@@ -171,16 +264,17 @@
   <button id="topo" onclick="scrollToTop()">↑</button>
 
   <script>
-      // Função para mostrar/ocultar botão de voltar ao topo
-      window.onscroll = function() {
-          document.getElementById("topo").style.display = window.scrollY > 300 ? "block" : "none";
-      };
-      function scrollToTop() {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+    // Função para mostrar/ocultar botão de voltar ao topo
+    window.onscroll = function () {
+      document.getElementById("topo").style.display = window.scrollY > 300 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   </script>
   <footer>
     <p>&copy; 2025 Sankofa Científico. Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>

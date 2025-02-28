@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roscoe L. Koontz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #1B4F72;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, #1B4F72, #F39C12);
+        }
+        h1 {
+            color: #1B4F72;
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #2471A3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            width: 280px;
+            border-radius: 10px;
+            border: 6px solid #2471A3;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+        .text-box {
+            border: 5px solid #2471A3;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #D6EAF8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+            background: #1B4F72;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            display: inline-block;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: #F39C12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #E67E22;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #1B4F72;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #2471A3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Roscoe L. Koontz</h1>
+        <div class="img-container">
+            <img src="Roscoe_Koontz.jpg" alt="Roscoe L. Koontz">
+        </div>
+        <div class="text-box">
+            Roscoe L. Koontz foi um físico afro-americano que desempenhou um papel essencial no avanço da segurança nuclear. Ele trabalhou no Oak Ridge National Laboratory, onde ajudou a desenvolver tecnologias de proteção radiológica, garantindo a segurança dos trabalhadores expostos à radiação. Sua contribuição foi crucial para a área da física nuclear aplicada.
+        </div>
+        <h2>Principais Contribuições</h2>
+        <div class="text-box">
+            <ul>
+                <li>Trabalhou no desenvolvimento de sistemas de proteção contra radiação.</li>
+                <li>Atuou no Oak Ridge National Laboratory, um dos principais centros de pesquisa nuclear dos EUA.</li>
+                <li>Foi um dos primeiros físicos afro-americanos a se destacar na área de tecnologia nuclear.</li>
+                <li>Contribuiu para avanços na segurança de trabalhadores expostos à radiação.</li>
+            </ul>
+        </div>
+        <h2>Saiba mais</h2>
+        <div class="text-box">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Roscoe_L._Koontz" target="_blank">Wikipedia</a></li>
+                <li><a href="http://www.myblackhistory.net/Roscoe_Koontz.htm" target="_blank">My Black History</a></li>
+                <li><a href="https://prezi.com/45loeo99f3ia/roscoe-l-koontz/" target="_blank">Prezi 1</a></li>
+                <li><a href="https://prezi.com/tpittpqqmwce/roscoe-l-koontz/" target="_blank">Prezi 2</a></li>
+                <li><a href="http://educa.fcc.org.br/scielo.php?script=sci_arttext&pid=S2237-94602019000400121" target="_blank">Artigo da FCC</a></li>
+            </ul>
+        </div>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>
