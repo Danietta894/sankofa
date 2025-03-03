@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rufus Stokes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #2C3E50;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, #2C3E50, #3498DB);
+        }
+        h1 {
+            color: #2C3E50;
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #2980B9;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            width: 280px;
+            border-radius: 10px;
+            border: 6px solid #2980B9;
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+        .text-box {
+            border: 5px solid #2980B9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background: #EAF2F8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        h2 {
+            color: white;
+            background: #2C3E50;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            display: inline-block;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            font-size: 17px;
+        }
+        ul li {
+            padding: 8px 0;
+            line-height: 1.6;
+        }
+        ul li::before {
+            content: "\1F538";
+            margin-right: 10px;
+        }
+        .impacto li::before {
+            content: "\1F534";
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 20px;
+            background-color: #3498DB;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #2980B9;
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2C3E50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #34495E;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rufus Stokes</h1>
+        <div class="img-container">
+            <img src="rufus_stokes.jpg" alt="Rufus Stokes">
+        </div>
+        <div class="text-box">
+            Rufus Stokes foi um inventor afro-americano que desenvolveu a "Clean Air Machine" na década de 1960, um dispositivo de purificação de ar que reduziu significativamente as emissões de poluentes industriais, melhorando a qualidade do ar e a saúde pública.
+        </div>
+        <h2>Principais Contribuições</h2>
+        <div class="text-box">
+            <ul>
+                <li>Patenteou um dispositivo de purificação de ar em 1968, destinado a reduzir as emissões de gás e cinzas de fornos e chaminés de usinas de energia.</li>
+                <li>Seu invento ajudou a melhorar a qualidade do ar em áreas urbanas e industriais, beneficiando a saúde pública.</li>
+                <li>A "Clean Air Machine" foi um avanço importante para regulamentações ambientais futuras.</li>
+            </ul>
+        </div>
+        <h2>Legado e Impacto</h2>
+        <div class="text-box">
+            <ul class="impacto">
+                <li>Seu trabalho influenciou futuras tecnologias de filtragem de ar e controle da poluição.</li>
+                <li>Contribuiu para o desenvolvimento de normas ambientais mais rigorosas.</li>
+                <li>É lembrado como um dos pioneiros na luta por um ambiente mais limpo.</li>
+            </ul>
+        </div>
+        <a href="https://www.eia.gov/kids/history-of-energy/famous-people/stokes.php" class="button" target="_blank">Saiba mais</a>
+        <br>
+        <a href="index.html" class="back-button">Voltar</a>
+    </div>
+</body>
+</html>
+
+
+ 

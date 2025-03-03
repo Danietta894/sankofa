@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores Universitários Negros - Sankofa Científico</title>
+    <style>
+        :root {
+            --primary-color: #4A235A;
+            --secondary-color: #6C3483;
+            --accent-color: #E74C3C;
+            --background-color: #F4F6F7;
+            --text-color: #2C3E50;
+            --button-bg: #E74C3C;
+            --button-hover: #C0392B;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--primary-color);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 5px solid var(--primary-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 30px;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .area {
+            margin-top: 30px;
+            padding: 15px;
+            border: 4px solid var(--primary-color);
+            border-radius: 12px;
+            background: #f9e6ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: white;
+            background: var(--primary-color);
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .cientista-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .cientista {
+            background-color: var(--background-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            min-height: 420px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cientista:hover {
+            transform: scale(1.05);
+        }
+
+        .cientista img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cientista p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .cientista a {
+            display: inline-block;
+            background-color: var(--button-bg);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .cientista a:hover {
+            background-color: var(--button-hover);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="#professores">Professores Universitários Negros</a>
+        <a href="#top">Topo</a>
+    </div>
+
+    <div class="container">
+        <h1>Professores Universitários Negros</h1>
+        <p>Conheça professores universitários negros que fizeram história e contribuíram significativamente para a educação e o conhecimento.</p>
+
+        <div class="area" id="professores">
+            <h2>Professores Universitários Negros</h2>
+            <div class="cientista-container">
+                <div class="cientista">
+                    <img src="Lélia_Gonzalez_by_Cezar_Loureiro.jpg" alt="Lélia Gonzalez">
+                    <h3>Lélia Gonzalez – Antropóloga e Professora Universitária</h3>
+                    <p>Pioneira nos estudos de raça e gênero no Brasil, Lélia Gonzalez foi uma referência na luta antirracista e feminista.</p>
+                    <a href="lelia.html">Saiba mais</a>
+                </div>
+                <div class="cientista">
+                    <img src="Milton-Santos-geografo-e-professor-da-USP._1.jpg.webp" alt="Milton Santos">
+                    <h3>Milton Santos – Geógrafo e Professor Universitário</h3>
+                    <p>Milton Santos foi um dos maiores geógrafos do Brasil, reconhecido mundialmente por suas pesquisas em geografia humana e crítica.</p>
+                    <a href="milton.html">Saiba mais</a>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
