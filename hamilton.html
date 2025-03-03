@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamilton Naki</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('fundo.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 5px solid #4A235A;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right, #4A235A, #E74C3C);
+    }
+    h1 {
+      color: #4A235A;
+      font-size: 30px;
+      text-transform: uppercase;
+      border-bottom: 4px solid #6C3483;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .img-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .img-container img {
+      width: 280px;
+      border-radius: 10px;
+      border: 6px solid #6C3483;
+      transition: transform 0.3s ease-in-out;
+    }
+    .img-container img:hover {
+      transform: scale(1.1);
+    }
+    .text-box {
+      border: 5px solid #6C3483;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      background: #f9e6ff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+    h2 {
+      color: white;
+      background: #4A235A;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 22px;
+      display: inline-block;
+    }
+    .button, .back-button {
+      display: inline-block;
+      padding: 14px 20px;
+      background-color: #E74C3C;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 17px;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+    .button:hover, .back-button:hover {
+      background-color: #C0392B;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hamilton Naki</h1>
+    <div class="img-container">
+      <img src="hamilton.jpg" alt="Hamilton Naki">
+    </div>
+    <div class="text-box">
+      Hamilton Naki foi um autodidata sul-africano que, apesar das restrições impostas pelo apartheid, tornou-se um assistente de laboratório altamente habilidoso, contribuindo significativamente para a cirurgia experimental na África do Sul.
+    </div>
+    <h2>Principais Contribuições</h2>
+    <div class="text-box">
+      <ul>
+        <li>Assistiu em procedimentos cirúrgicos experimentais, incluindo transplantes de órgãos em animais.</li>
+        <li>Ensinou técnicas cirúrgicas a estudantes de medicina e jovens médicos.</li>
+        <li>Trabalhou ao lado de renomados cirurgiões, contribuindo para avanços na medicina sul-africana.</li>
+      </ul>
+    </div>
+    <h2>Saiba mais</h2>
+    <div class="text-box">
+      <ul>
+        <li><a href="https://pt.wikipedia.org/wiki/Hamilton_Naki" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.dw.com/pt-002/hamilton-naki-um-inovador-na-sombra-do-apartheid/a-53745416" target="_blank">DW - Inovador na sombra do apartheid</a></li>
+        <li><a href="https://www.geledes.org.br/hamilton-naki-o-jardineiro-cirurgiao/" target="_blank">Geledés - O Jardineiro Cirurgião</a></li>
+        <li><a href="https://www.editoramostarda.com.br/produto/hamilton-naki/" target="_blank">Editora Mostarda</a></li>
+        <li><a href="https://www.cmsfc.ba.gov.br/noticias/931/18-de-outubro-dia-do-madico-esse-a-dr-hamilton-naki/?pg=734" target="_blank">Homenagem ao Dr. Hamilton Naki</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="back-button">Voltar</a>
+  </div>
+</body>
+</html>
